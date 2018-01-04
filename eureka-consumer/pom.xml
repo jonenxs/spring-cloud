@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.nxs</groupId>
-	<artifactId>eureka-client</artifactId>
+	<artifactId>eureka-consumer</artifactId>
 	<packaging>jar</packaging>
 
-	<name>eureka-client</name>
-	<description>eureka-client</description>
+	<name>eureka-consumer</name>
+	<description>eureka-consumer</description>
 
 	<parent>
 		<groupId>com.nxs</groupId>
@@ -23,6 +23,12 @@
 	</properties>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>com.nxs.spring-cloud</groupId>
+			<artifactId>spring-cloud</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
@@ -35,11 +41,6 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.nxs.spring-cloud</groupId>
-			<artifactId>spring-cloud</artifactId>
-		</dependency>
-
-		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
@@ -47,9 +48,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
 	</dependencies>
-
-
 
 	<build>
 		<plugins>
