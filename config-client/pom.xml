@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.nxs</groupId>
-	<artifactId>consul-client</artifactId>
+	<artifactId>config-client</artifactId>
 	<packaging>jar</packaging>
 
-	<name>consul-client</name>
-	<description>Consul</description>
+	<name>config-client</name>
+	<description>config-client</description>
 
 	<parent>
 		<groupId>com.nxs</groupId>
@@ -23,17 +23,6 @@
 	</properties>
 
 	<dependencies>
-
-		<dependency>
-			<groupId>com.nxs.spring-cloud</groupId>
-			<artifactId>spring-cloud</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-consul-discovery</artifactId>
-		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
@@ -44,6 +33,27 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>com.nxs.spring-cloud</groupId>
+			<artifactId>spring-cloud</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<build>
