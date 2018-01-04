@@ -15,9 +15,6 @@ import org.springframework.web.client.RestTemplate;
 public class DcController {
 
     @Autowired
-    LoadBalancerClient loadBalancerClient;
-
-    @Autowired
     RestTemplate restTemplate;
 
     @RequestMapping("/consumer")
