@@ -18,6 +18,7 @@
 		<module>config-client</module>
 		<module>consumer-ribbon-hystrix</module>
 		<module>hystrix-dashboard</module>
+		<module>turbine</module>
 	</modules>
 
 	<packaging>pom</packaging>

@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.nxs</groupId>
-	<artifactId>hystrix-dashboard</artifactId>
+	<artifactId>turbine</artifactId>
 	<packaging>jar</packaging>
 
-	<name>hystrix-dashboard</name>
-	<description>hystrix-dashboard</description>
+	<name>turbine</name>
+	<description>turbine</description>
 
 	<parent>
 		<groupId>com.nxs</groupId>
@@ -34,21 +34,20 @@
 			<scope>test</scope>
 		</dependency>
 
-        <dependency>
-            <groupId>com.nxs.spring-cloud</groupId>
-            <artifactId>spring-cloud</artifactId>
-        </dependency>
+		<dependency>
+			<groupId>com.nxs.spring-cloud</groupId>
+			<artifactId>spring-cloud</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
+			<artifactId>spring-cloud-starter-turbine</artifactId>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-
 	</dependencies>
 
 	<build>
